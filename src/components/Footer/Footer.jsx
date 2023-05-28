@@ -16,9 +16,7 @@ return (
 
     <div className={styles.rights}>
       Developed by {""}
-      <a target="_blank">
-         Nurzhan
-      </a>
+
     </div>
 
   </section>)
