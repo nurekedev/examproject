@@ -14,9 +14,9 @@ const Favourite = () => {
   const userActionCreators = bindActionCreators(userActions, dispatch);
 
   /* Getting actions from "bindActionCreators" */
-  const changeQuantity = (item, quantity) => {
-    userActionCreators.addItemToFavourites({ ...item, quantity });
-  };
+  // const changeQuantity = (item, quantity) => {
+  //   userActionCreators.addItemToFavourites({ ...item, quantity });
+  // };
   const removeItem = (id) => {
     userActionCreators.removeItemFromFavourites(id);
   };

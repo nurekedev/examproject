@@ -22,7 +22,7 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
         {/* Using map to create new array to store new values */}
         {cart.map((item) => {
 
-          {/* Destruction elems to "item" */}
+          // {/* Destruction elems to "item" */}
           const { title, category, images, price, id, quantity } = item;
 
           return (

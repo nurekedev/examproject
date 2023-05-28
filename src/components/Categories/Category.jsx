@@ -45,10 +45,10 @@ const Category = () => {
     setEnd(false);
     setParams({ ...defaultParams, categoryId: id });
 
-    console.log('Component mounted/updated with new id:', id);
+    // console.log('Component mounted/updated with new id:', id);
 
     return () => {
-      console.log('Component unmounted');
+      // console.log('Component unmounted');
     };
   }, [id]);
 

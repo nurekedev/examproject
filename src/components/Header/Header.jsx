@@ -15,7 +15,7 @@ const Header = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [searchValue, setSearchValue] = useState("");
-  const { currentUser, cart, favourite } = useSelector(({ user }) => user);
+  const { currentUser, cart } = useSelector(({ user }) => user);
   const [values, setValues] = useState({ name: "Guest", avatar: AVATAR });
   const { data, isLoading } = useGetProductsQuery({ title: searchValue });
 
@@ -26,7 +26,7 @@ const Header = () => {
     setValues(currentUser);
   }, [currentUser]);
 
-  /* Displaying form if User doesn not authorized */
+  /* Displaying form if User does not authorize */
   const handleClick = () => {
     if (!currentUser) dispatch(toggleForm(true));
     else navigate(ROUTES.PROFILE);
@@ -88,7 +88,7 @@ const Header = () => {
                         className={styles.image}
                         style={{ backgroundImage: `url(${images[0]})` }}
                       />
-                      <div className={styles.title}>{title}</div>
+                      <div>{title}</div>
                     </Link>
                   );
                 })}
