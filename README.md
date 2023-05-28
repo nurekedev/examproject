@@ -7,6 +7,10 @@ React Project with [Fake API](https://fakeapi.platzi.com/) Integration
 
 This project is a React application that integrates with the FakeAPI provided by Platzi. It retrieves and displays data from the API to showcase how to consume external data in a React application.
 
+## Deploy
+
+Go to live: [LogStore](https://main--effortless-druid-cb91a9.netlify.app/)
+
 ## Installation
 
 To install and run the project locally, follow these steps:
