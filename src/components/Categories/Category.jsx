@@ -13,12 +13,14 @@ const Category = () => {
   const { list } = useSelector(({ categories }) => categories);
 
   /* Set initial values to labels */
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const defaultValues = {
     title: '',
     price_min: 0,
     price_max: 0,
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const defaultParams = {
     categoryId: id,
     limit: 5,
@@ -37,20 +39,21 @@ const Category = () => {
 
   /* Demonstrating lifecycle steps */
   /* componentDidMount and componentDidUpdate equivalent for id change */
-  useEffect(() => {
-    if (!id) return;
+useEffect(() => {
+  if (!id) return;
 
-    setValues(defaultValues);
-    setItems([]);
-    setEnd(false);
-    setParams({ ...defaultParams, categoryId: id });
+  setValues(defaultValues);
+  setItems([]);
+  setEnd(false);
+  setParams({ ...defaultParams, categoryId: id });
 
-    // console.log('Component mounted/updated with new id:', id);
+  // console.log('Component mounted/updated with new id:', id);
 
-    return () => {
-      // console.log('Component unmounted');
-    };
-  }, [id]);
+  return () => {
+    // console.log('Component unmounted');
+  };
+}, [id]);
+
 
 
 

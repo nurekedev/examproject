@@ -2,7 +2,6 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import styles from "../../styles/Cart.module.css";
-import { sumBy } from '../../utils/common';
 import * as userActions from '../../features/user/userSlice';
 
 /* Creating component */

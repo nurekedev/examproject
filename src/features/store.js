@@ -1,4 +1,5 @@
-import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
+// eslint-disable-next-line no-unused-vars
+import { configureStore } from "@reduxjs/toolkit";
 import categoriesSlice from "./categories/categoriesSlice";
 import productsSlice from "./products/productsSlice";
 import { apiSlice } from "./api/apiSlice";
