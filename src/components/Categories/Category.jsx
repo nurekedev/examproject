@@ -52,7 +52,7 @@ useEffect(() => {
   return () => {
     // console.log('Component unmounted');
   };
-}, [id]);
+}, [id, defaultParams, defaultValues ]);
 
 
 
